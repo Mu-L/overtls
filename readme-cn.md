@@ -42,7 +42,7 @@ overtls 客戶端首先與 overtls 服務端建立 TLS 連接，然後 overtls �
 如果你已經安裝了 [Rust](https://rustup.rs/)，你可以直接安裝 overtls。
 
 ```bash
-cargo install overtls
+cargo install overtls --root /usr/local/
 ```
 
 ### 預編譯二進制文件
@@ -74,6 +74,19 @@ chmod +x overtls-install-musl.sh
 ./overtls-install-musl.sh
 sudo systemctl start overtls
 ```
+
+### 使用 Caddy 的安裝腳本
+<details>
+<summary>使用 Caddy 的腳本的安裝步驟</summary>
+
+```bash
+sudo apt install -y wget # Debian/Ubuntu
+wget https://raw.githubusercontent.com/shadowsocksr-live/overtls/master/install/overtls-install-caddy.sh
+bash ./overtls-install-caddy.sh
+sudo systemctl start overtls
+```
+
+</details>
 
 ## 用法
 

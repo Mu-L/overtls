@@ -55,7 +55,7 @@ In summary, we need to prepare the following things
 
 If you have installed the [Rust](https://rustup.rs/), you can install overtls directly.
 ```bash
-cargo install overtls
+cargo install overtls --root /usr/local/
 ```
 
 ### Pre-compiled binary file
@@ -92,6 +92,19 @@ chmod +x overtls-install-musl.sh
 ./overtls-install-musl.sh
 sudo systemctl start overtls
 ```
+
+### Installation script with Caddy
+<details>
+<summary>Steps of installing with Caddy</summary>
+
+```bash
+sudo apt install -y wget # Debian/Ubuntu
+wget https://raw.githubusercontent.com/shadowsocksr-live/overtls/master/install/overtls-install-caddy.sh
+bash ./overtls-install-caddy.sh
+sudo systemctl start overtls
+```
+
+</details>
 
 ## Usage
 
