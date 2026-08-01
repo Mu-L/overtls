@@ -1,6 +1,6 @@
 [package]
 name = "overtls"
-version = "0.3.12"
+version = "0.3.13"
 edition = "2024"
 license = "MIT"
 description = "A simple proxy tunnel, minimalist tool for bypassing the GFW."
@@ -20,7 +20,7 @@ async-shared-timeout = "0.2.2"
 base64easy = "0.1.7"
 bytes = "1.12.1"
 chrono = "0.4.45"
-clap = { version = "4.6.4", features = ["derive", "cargo", "wrap_help"] }
+clap = { version = "4.6.5", features = ["derive", "cargo", "wrap_help"] }
 connection-pool = { version = "0.3.8", default-features = false }
 ctrlc2 = { version = "4.0.0", features = ["async", "termination"] }
 dotenvy = "0.15.7"
@@ -30,7 +30,7 @@ futures-util = { version = "0.3.33", default-features = false, features = [
     "std",
 ] }
 hickory-proto = "0.26.1"
-http = "1.4.2"
+http = "1.5.0"
 httparse = "1.10.1"
 log = { version = "0.4.33", features = ["std"] }
 moka = { version = "0.12.15", default-features = false, features = ["future"] }
@@ -38,7 +38,7 @@ reqwest = { version = "0.13.4", default-features = false, features = [
     "rustls",
     "json",
 ] }
-rustls = { version = "0.23.42", default-features = false, features = [
+rustls = { version = "0.23.43", default-features = false, features = [
     "std",
     "tls12",
     "logging",
@@ -52,7 +52,7 @@ socket2 = "0.6.5"
 socks-hub = { version = "0.2.9", default-features = false, features = [
     "httpproxy",
 ] }
-socks5-impl = { version = "0.9.4", default-features = false, features = [
+socks5-impl = { version = "0.9.5", default-features = false, features = [
     "server",
 ] }
 thiserror = "2.0.19"
