@@ -38,11 +38,11 @@ pub(crate) fn ensure_rustls_crypto_provider() -> Result<()> {
         return Ok(());
     }
 
-    let install_result = rustls::crypto::ring::default_provider().install_default();
+    let install_result = rustls::crypto::aws_lc_rs::default_provider().install_default();
 
     if rustls::crypto::CryptoProvider::get_default().is_none() {
         if let Err(e) = install_result {
-            return Err(Error::from(format!("failed to install rustls ring CryptoProvider: {e:?}")));
+            return Err(Error::from(format!("failed to install rustls aws_lc_rs CryptoProvider: {e:?}")));
         } else {
             return Err(Error::from(
                 "failed to install rustls ring CryptoProvider: provider is still not set after successful installation",

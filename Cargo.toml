@@ -42,7 +42,7 @@ rustls = { version = "0.23.42", default-features = false, features = [
     "std",
     "tls12",
     "logging",
-    "ring",
+    "aws_lc_rs",
 ] }
 rustls-pemfile = "2.2.0"
 serde = { version = "1.0.229", features = ["derive"] }
@@ -60,7 +60,7 @@ tokio = { version = "1.53.1", features = ["full"] }
 tokio-rustls = { version = "0.26.4", default-features = false, features = [
     "logging",
     "tls12",
-    "ring",
+    "aws_lc_rs",
 ] }
 tokio-tungstenite = { version = "0.30.0", features = [
     "rustls-tls-webpki-roots",
